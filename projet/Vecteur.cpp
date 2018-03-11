@@ -5,7 +5,7 @@
 //  Created by  Jeannette Gommendy on 02/03/2018.
 //  Copyright © 2018  Jeannette Gommendy. All rights reserved.
 //
-hghg
+
 
 #include <iostream>
 #include <vector>
