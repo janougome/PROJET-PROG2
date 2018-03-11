@@ -5,7 +5,7 @@
 //  Created by  Jeannette Gommendy on 02/03/2018.
 //  Copyright © 2018  Jeannette Gommendy. All rights reserved.
 //
-jegf
+
 
 #include <iostream>
 #include <vector>
@@ -17,7 +17,7 @@ using namespace std ;
 
 typedef vector<double> coord ;
 
-GJD
+
 Vecteur (int dim )
     
     
