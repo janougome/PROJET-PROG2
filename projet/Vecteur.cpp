@@ -17,7 +17,7 @@ using namespace std ;
 
 typedef vector<double> coord ;
 
-
+GJD
 Vecteur (int dim )
     
     
