@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ABBAA171204987F10070EBEA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ABBAA170204987F10070EBEA /* main.cpp */; };
+		AB97A0EB2052D79B00CBF840 /* makefile in Sources */ = {isa = PBXBuildFile; fileRef = AB97A0EA2052D79B00CBF840 /* makefile */; };
+		ABBAA171204987F10070EBEA /* Vecteur.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ABBAA170204987F10070EBEA /* Vecteur.cpp */; };
+		ABBAA17A204988CD0070EBEA /* testVecteur.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ABBAA178204988CD0070EBEA /* testVecteur.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +25,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AB97A0EA2052D79B00CBF840 /* makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; name = makefile; path = projet/makefile; sourceTree = SOURCE_ROOT; };
 		ABBAA16D204987F10070EBEA /* vecteur */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = vecteur; sourceTree = BUILT_PRODUCTS_DIR; };
-		ABBAA170204987F10070EBEA /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		ABBAA170204987F10070EBEA /* Vecteur.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Vecteur.cpp; path = projet/Vecteur.cpp; sourceTree = "<group>"; };
+		ABBAA177204988930070EBEA /* Vecteur.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Vecteur.h; path = projet/Vecteur.h; sourceTree = "<group>"; };
+		ABBAA178204988CD0070EBEA /* testVecteur.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = testVecteur.cpp; path = projet/testVecteur.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +62,10 @@
 		ABBAA16F204987F10070EBEA /* vecteur */ = {
 			isa = PBXGroup;
 			children = (
-				ABBAA170204987F10070EBEA /* main.cpp */,
+				ABBAA170204987F10070EBEA /* Vecteur.cpp */,
+				ABBAA178204988CD0070EBEA /* testVecteur.cpp */,
+				ABBAA177204988930070EBEA /* Vecteur.h */,
+				AB97A0EA2052D79B00CBF840 /* makefile */,
 			);
 			path = vecteur;
 			sourceTree = "<group>";
@@ -119,7 +127,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABBAA171204987F10070EBEA /* main.cpp in Sources */,
+				ABBAA17A204988CD0070EBEA /* testVecteur.cpp in Sources */,
+				ABBAA171204987F10070EBEA /* Vecteur.cpp in Sources */,
+				AB97A0EB2052D79B00CBF840 /* makefile in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
