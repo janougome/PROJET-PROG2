@@ -149,10 +149,16 @@ void Vecteur:: augmente  (double x) {
     }
     
     //Opérateurs de comparaison entre 2 Vecteurs
-    bool Vecteur::operator==(const Vecteur3D& autre) const{
+    bool Vecteur::operator==(const Vecteur& autre) const{
           for (size_t i(0) ; i < fmin(vec.size(),autre.vec.size()) ; ++i){
-        return ( vec[i].get() == autre[i].get());
-    }// true si égalité
+              if(vec[i] != autre.vec[i]) {
+                  return false;
+              }
+          }
+        return true;
+    }
+
+    // true si égalité
        
     bool Vecteur::operator!=(const Vecteur& autre) const{
             return (not(*this==autre));
