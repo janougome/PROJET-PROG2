@@ -39,12 +39,17 @@ Vecteur (int dim ) {
     
     //constructeur: les valeurs d'une liste sont données aux coordonnnées de notre vecteur
     
-Vecteur (coord a ) {
-    dim = a.size();
+    Vecteur (initialize_list <double> const& a) :
+    
+        dim = a.size()
+    {
     for (size_t i (0);i < a.size();++1) {
         vec [i]= a [i];
         
     }
+        
+    }
+  
     
 }
     

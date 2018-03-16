@@ -85,5 +85,34 @@ class Vecteur {
     
     bool Vecteur::operator!=(const Vecteur& autre) const;
     
+    //Surcharge externe d'opérateurs
+    
+    
+    //affiche Surcharge faite en externe, car on ne veut pas modifier la class ostream :
+    ostream& operator<<(ostream& sortie, const Vecteur& v);
+    
+    //Addition. Externe car on crée une nouvelle instance :
+    Vecteur operator+(Vecteur v1, const Vecteur& v2);
+    
+    //soustraction: externe ( création nouvelle instance) :
+    Vecteur operator-(Vecteur v1, const Vecteur& v2)
+    
+    //Multiplication d'un scalaire à un Vecteur par la droite :
+    Vecteur operator*(Vecteur v1, double scalaire);
+    
+    //Multiplication d'un scalaire à un Vecteur par la gauche :
+    Vecteur operator*(double x, const Vecteur& v);
+    
+    //Opérateur du produit vectoriel :
+    Vecteur operator^(Vecteur v1, const Vecteur& v2);
+    
+    //Opérateur du produit scalaire
+    double operator*(Vecteur v1, const Vecteur& v2);
+    
+    //Opérateur retournant l'opposé d'un Vecteur3D
+    Vecteur operator-(const Vecteur& v1);
+    
+    
+    
     };
 
