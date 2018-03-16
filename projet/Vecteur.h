@@ -16,6 +16,16 @@ class Vecteur {
     //méthodes
     public :
     
+    // constructeur qui initialise un vecteur nul
+    Vecteur (int dim )
+    
+    // constructeur d'un vecteur 3D
+    Vecteur ( double n,double p, double t)
+    
+    //constructeur: les valeurs d'une liste sont données aux coordonnnées de notre vecteur
+    
+    Vecteur (coord a );
+    
     //ajouter une dimension au vecteur et une valeur pour cette dimension
     void augmente  (double x);
     
@@ -59,18 +69,21 @@ class Vecteur {
     //calcul de la norme au carré d'un vecteur
     double norme2() const;
     
-    //opérateur +=
+    //Surcharge interne d'opérateurs
+    
+    //opérateur interne addition +=
     Vecteur& Vecteur::operator+=(const Vecteur& autre);
     
-    // opérateur interne soustraction
+    // opérateur interne soustraction -=
     Vecteur& Vecteur::operator-=(const Vecteur& autre)
     
-    //opérateur interne multiplication par scalaire
+    //opérateur interne multiplication par scalaire *=
     Vecteur& Vecteur::operator*=(scalaire);
     
-    //Opérateurs de comparaison entre 2 Vecteurs
-    bool Vecteur::operator==(const Vecteur& autre) const
+    //Opérateurs de comparaison entre 2 Vecteurs == et !=
+    bool Vecteur::operator==(const Vecteur& autre) const;
     
+    bool Vecteur::operator!=(const Vecteur& autre) const;
     
     };
 

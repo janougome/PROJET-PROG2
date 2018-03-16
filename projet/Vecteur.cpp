@@ -18,12 +18,15 @@ using namespace std ;
 typedef vector<double> coord ;
 
 // constructeur qui initialise un vecteur nul
-Vecteur (int dim )
-:  for (size_t i (0);i < dim;++1) {
+Vecteur (int dim ) {
+ for (size_t i (0);i < dim;++1) {
         
         vec.push_back(0);
-{
+
+ }
+    
 }
+
     // constructeur d'un vecteur 3D
     Vecteur ( double n,double p, double t) :
     
@@ -35,13 +38,14 @@ Vecteur (int dim )
     
     //constructeur: les valeurs d'une liste sont données aux coordonnnées de notre vecteur
     
-    Vecteur (coord a ) :
+Vecteur (coord a ) {
     dim = a.size();
     for (size_t i (0);i < a.size();++1) {
         vec [i]= a [i];
         
     }
-    {}
+    
+}
     
     
     
@@ -89,7 +93,7 @@ void Vecteur:: augmente  (double x) {
                     
                 if (vec[i] != b.vec[i]) {
                         
-                        //cout <<" les deux vecteurs ne sont pas  identiques" <<endl;
+                        //cout <<" les deux vecteurs ne sont pas identiques" <<endl;
                     return false;
                 }
             

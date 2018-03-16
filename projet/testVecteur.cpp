@@ -199,6 +199,10 @@ cout << ")"  << endl;
 cout << "||(1.0, 2.0, -0.1)||^2 = " << vect1.norme2() << endl;
 cout << "||(2.6, 3.5, 4.1)||^2 = " << vect2.norme2() << endl;
 
+   // test avec les opérateurs
+    
+
+    
     return 0 ; }
     
 
