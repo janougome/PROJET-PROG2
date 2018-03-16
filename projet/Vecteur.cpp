@@ -10,6 +10,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
+ #include <initializer_list>
 #include <cmath>
 #include "Vecteur.h"
 
@@ -153,13 +154,13 @@ void Vecteur:: augmente  (double x) {
         }// true si différence
         
         //==================================================================================
-        //Surcharge externe d'opératuers
+        //Surcharge externe d'opérateurs
         
        
-        //Surcharge faite en externe, car on ne veut pas modifier la class ostream :
+        //affiche Surcharge faite en externe, car on ne veut pas modifier la class ostream :
         ostream& operator<<(ostream& sortie, const Vecteur& v){
             for (size_t i(0) ; i < v.size() ; ++i) {
-            sortie << v[i].get() << " "; // (x,y,z,...)
+            sortie << v[i].get() << " ";
             return sortie;
         }
         //----------------------------------------------------------------------------------
