@@ -1,3 +1,4 @@
+
 #include <vector>
 #pragma once
 
@@ -63,7 +64,7 @@ class Vecteur {
     Vecteur& Vecteur::operator+=(const Vecteur& autre);
     
     // opérateur interne soustraction
-    Vecteur& Vecteur::operator-=(const Vecteur& autre)
+    Vecteur& Vecteur::operator-=(const Vecteur& autre);
     
     //opérateur interne multiplication par scalaire
     Vecteur& Vecteur::operator*=(scalaire);

@@ -136,7 +136,7 @@ void Vecteur:: augmente  (double x) {
     }
     
     //opérateur interne multiplication par scalaire
-    Vecteur& Vecteur::operator*=(scalaire){
+    Vecteur& Vecteur::operator*=(double scalaire){
         for (size_t i(0) ; i < fmin(vec.size(),autre.vec.size()) ; ++i){
             vec[i] *= scalaire;
         }
@@ -317,4 +317,4 @@ void Vecteur:: augmente  (double x) {
         }
             
 
-    
+   k
