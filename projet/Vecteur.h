@@ -58,7 +58,19 @@ class Vecteur {
     
     //calcul de la norme au carré d'un vecteur
     double norme2() const;
-        
+    
+    //opérateur +=
+    Vecteur& Vecteur::operator+=(const Vecteur& autre);
+    
+    // opérateur interne soustraction
+    Vecteur& Vecteur::operator-=(const Vecteur& autre)
+    
+    //opérateur interne multiplication par scalaire
+    Vecteur& Vecteur::operator*=(scalaire);
+    
+    //Opérateurs de comparaison entre 2 Vecteurs
+    bool Vecteur::operator==(const Vecteur& autre) const
+    
     
     };
 
