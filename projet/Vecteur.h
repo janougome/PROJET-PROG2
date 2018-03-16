@@ -17,10 +17,10 @@ class Vecteur {
     public :
     
     // constructeur qui initialise un vecteur nul
-    Vecteur (int dim )
+    Vecteur (int dim );
     
     // constructeur d'un vecteur 3D
-    Vecteur ( double n,double p, double t)
+    Vecteur ( double n,double p, double t);
     
     //constructeur: les valeurs d'une liste sont données aux coordonnnées de notre vecteur
     
@@ -75,7 +75,7 @@ class Vecteur {
     Vecteur& Vecteur::operator+=(const Vecteur& autre);
     
     // opérateur interne soustraction -=
-    Vecteur& Vecteur::operator-=(const Vecteur& autre)
+    Vecteur& Vecteur::operator-=(const Vecteur& autre);
     
     //opérateur interne multiplication par scalaire *=
     Vecteur& Vecteur::operator*=(scalaire);
@@ -95,7 +95,7 @@ class Vecteur {
     Vecteur operator+(Vecteur v1, const Vecteur& v2);
     
     //soustraction: externe ( création nouvelle instance) :
-    Vecteur operator-(Vecteur v1, const Vecteur& v2)
+    Vecteur operator-(Vecteur v1, const Vecteur& v2);
     
     //Multiplication d'un scalaire à un Vecteur par la droite :
     Vecteur operator*(Vecteur v1, double scalaire);
