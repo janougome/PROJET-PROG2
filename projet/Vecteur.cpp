@@ -19,12 +19,15 @@ using namespace std ;
 typedef vector<double> coord ;
 
 // constructeur qui initialise un vecteur nul
-Vecteur (int dim )
-:  for (size_t i (0);i < dim;++1) {
+Vecteur (int dim ) {
+ for (size_t i (0);i < dim;++1) {
         
         vec.push_back(0);
-{
+
+ }
+    
 }
+
     // constructeur d'un vecteur 3D
     Vecteur ( double n,double p, double t) :
     
@@ -47,6 +50,8 @@ Vecteur (int dim )
         
     }
   
+    
+}
     
     
     
@@ -94,7 +99,7 @@ void Vecteur:: augmente  (double x) {
                     
                 if (vec[i] != b.vec[i]) {
                         
-                        //cout <<" les deux vecteurs ne sont pas  identiques" <<endl;
+                        //cout <<" les deux vecteurs ne sont pas identiques" <<endl;
                     return false;
                 }
             
@@ -144,10 +149,16 @@ void Vecteur:: augmente  (double x) {
     }
     
     //Opérateurs de comparaison entre 2 Vecteurs
-    bool Vecteur::operator==(const Vecteur3D& autre) const{
+    bool Vecteur::operator==(const Vecteur& autre) const{
           for (size_t i(0) ; i < fmin(vec.size(),autre.vec.size()) ; ++i){
-        return ( vec[i].get() == autre[i].get());
-    }// true si égalité
+              if(vec[i] != autre.vec[i]) {
+                  return false;
+              }
+          }
+        return true;
+    }
+
+    // true si égalité
        
     bool Vecteur::operator!=(const Vecteur& autre) const{
             return (not(*this==autre));
