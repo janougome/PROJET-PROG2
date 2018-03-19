@@ -3,6 +3,7 @@
 #include <iostream>
 #include <initializer_list>
 
+
 typedef std::vector<double> coord;
 
 class Vecteur {
