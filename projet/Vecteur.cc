@@ -357,7 +357,3 @@ double Vecteur::  norme2() const{
 }
 
 
-
-
-
-
