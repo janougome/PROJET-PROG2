@@ -1,4 +1,3 @@
-
 CXX = g++
 CC  = $(CXX)
 
@@ -13,10 +12,16 @@ CXXFLAGS += -g                      # pour debugger
 #LDFLAGS  += -pg                   # pour profiler
 #CXXFLAGS += -O2                   # pour optimiser la vitesse
 
-all: testVecteur
+all: testVecteur #testoscillateur
 
-Vecteur.o: Vecteur.cpp Vecteur.h
+Vecteur.o: Vecteur.cc Vecteur.h
 
-testVecteur.o: testVecteur.cpp Vecteur.h
+testVecteur.o: testVecteur.cc Vecteur.h
 
 testVecteur: testVecteur.o Vecteur.o
+
+#testoscillateur.o : testoscillateur.cc oscillateur.h Vecteur.h
+
+#oscillateur.o: oscillateur.cc oscillateur.h Vecteur.h
+
+#testoscillateur: testoscillateur.o oscillateur.o Vecteur.o
